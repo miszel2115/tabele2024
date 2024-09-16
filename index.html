@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabele</title>
+    <style>
+        table {
+            margin: auto;
+            text-align: center;
+            border: 3px solid red;
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <a><em>Tabela 1 - rowspan</em></a>
+        <table>
+            <tr>
+                <th>ein</th>
+                <th>zwei</th>
+                <th>drei</th>
+            </tr>
+            <tr>
+                <td rowspan="2">vier</td>
+                <td>fünf</td>
+                <td>sechs</td>
+            </tr>
+            <tr>
+                <td>sieben</td>
+                <td>acht</td>
+            </tr>
+        </table><hr>
+        <a><em>Tabela 2 - colspan</em></a>
+        <table>
+            <tr>
+                <th>ein</th>
+                <th colspan="2">zwei</th>
+                <th>drei</th>
+            </tr>
+            <tr>
+                <td>vier</td>
+                <td>fünf</td>
+                <td>sechs</td>
+                <td>sieben</td>
+            </tr>
+            <tr>
+                <td>acht</td>
+                <td>neun</td>
+                <td>zehn</td>
+                <td>elf</td>
+            </tr>   
+        </table><hr>
+        <a><em>Tabela 3 - rowspan i colspan</em></a>
+        <table>
+            <tr>
+                <th colspan="2">ein</th>
+                <th>zwei</th>
+                <th>drei</th>
+            </tr>
+            <tr>
+                <td rowspan="2">vier</td>
+                <td>fünf</td>
+                <td>sechs</td>
+                <td>sieben</td>
+            </tr>
+            <tr>
+                <td>acht</td>
+                <td>neun</td>
+                <td>zehn</td>
+            </tr>
+            <tr>
+                <td>elf</td>
+                <td>zwölf</td>
+                <td>dreizehn</td>
+                <td>vierzehn</td>
+            </tr>   
+        </table><hr>
+</body>
+</html>
